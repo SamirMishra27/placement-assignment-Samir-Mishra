@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 0.5rem;
+    display: inline-flex;
+}
+
+.logo {
+    width: 30%;
+    height: 10rem;
+    background-color: #63a0cb;
+    margin-right: 0.25rem;
+}
+
+nav {
+    width: 70%;
+    height: 10rem;
+    background-color: #ababa9;
+    margin-left: 0.25rem;
+}
+
+main {
+    width: 100%;
+    padding: 0 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero {
+    width: 100%;
+    height: 16rem;
+    background-color: #797977;
+}
+
+.features {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
+.card {
+    width: 33%;
+    height: 16rem;
+    background-color: #b2d5eb;
+}
+
+footer {
+    width: 100%;
+    padding: 0 0.5rem;
+}
+
+footer .content {
+    height: 16rem;
+    background-color: #c5c6c0;
+}
+
+@media (max-width: 640px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        height: 10rem;
+        margin: 0.25rem 0;
+    }
+}
